@@ -1,5 +1,21 @@
 # AWS EC2 intance Cheatsheet
 
+## AWS Server
+### Connect to AWS Server
+```
+ssh -i {path/to/.pem key file} ubuntu@{Public DNS} 
+```
+
+### Transfer Files
+#### To Server
+```
+scp -i {path/to/.pem key file} {path/to/file in your computer} ubuntu@{Public DNS}:/home/ubuntu/{path/to/dir to paste in server}
+```
+#### From Server
+```
+scp -i {path/to/.pem key file} ubuntu@{Public DNS}:/home/ubuntu/{path/to/file in server} {path/to/dir to paste in your computer} 
+```
+
 ## Jupyter Notebook
 ### Run Notebook
 ```
