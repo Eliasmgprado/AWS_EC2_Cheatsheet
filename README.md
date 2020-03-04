@@ -35,6 +35,11 @@ jupyter notebook --ip=0.0.0.0 --no-browser
 ### Run in screen mode (keep task running if connection loss)
 
 - Basically you run `screen`, run the command that you want, and then run `Ctrl + a + d` to detach from the session. You can then disconnect from the server/close the terminal and come back to it whenever you want by running `screen -r`.
+- screen mode commands:
+    - `Ctrl a c` - Creates a new screen session so that you can use more than one screen session at once.
+    - `Ctrl a n` - Switches to the next screen session (if you use more than one).
+    - `Ctrl a p`- Switches to the previous screen session (if you use more than one).
+    - `Ctrl a d` - Detaches a screen session (without killing the processes in it - they continue).
 
 ## TensorFlow GPU setup
 ### Check for GPU in EC2 instance system
