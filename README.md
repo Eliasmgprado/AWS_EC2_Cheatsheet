@@ -40,6 +40,16 @@ jupyter notebook --ip=0.0.0.0 --no-browser
     - `Ctrl a n` - Switches to the next screen session (if you use more than one).
     - `Ctrl a p`- Switches to the previous screen session (if you use more than one).
     - `Ctrl a d` - Detaches a screen session (without killing the processes in it - they continue).
+    
+    
+### TMUX
+
+1. run the command `tmux`
+2. in the new shell that pops up, execute the job
+3. detach from the tmux shell by using the shortcut `(Ctrl+b then d)`
+4. if the ssh connection resets, ssh to the instance again and run `tmux attach`
+5. the job should have kept on running and you can resume where you left off
+
 
 ## TensorFlow GPU setup
 ### Check for GPU in EC2 instance system
